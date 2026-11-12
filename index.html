@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store | Half Zipper Sweatshirt</title>
+  <meta name="description" content="Half Zipper Sweatshirt - ৳700. Black and White available.">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,"Noto Sans Bengali",sans-serif;background:#f6f7f9;color:#111;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1100px,92%);margin:auto}
+    .hero{background:linear-gradient(135deg,#111 0%,#222 55%,#151515 100%);color:#fff;padding:55px 0 35px}
+    .brand{font-size:18px;font-weight:800;letter-spacing:1px;margin-bottom:28px}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center}
+    .tag{display:inline-block;background:#dfff00;color:#111;font-weight:800;padding:7px 13px;border-radius:30px;margin-bottom:15px}
+    h1{font-size:clamp(32px,6vw,58px);line-height:1.05;margin-bottom:14px}
+    .hero p{font-size:18px;color:#ddd;max-width:520px}
+    .price{font-size:36px;font-weight:900;color:#dfff00;margin:18px 0}
+    .btn{display:inline-block;background:#dfff00;color:#111;padding:14px 24px;border-radius:12px;font-weight:900;border:0;cursor:pointer;font-size:16px}
+    .hero-img{width:100%;max-width:520px;display:block;margin:auto;border-radius:20px;box-shadow:0 20px 50px #0008}
+    .section{padding:55px 0}
+    .title{text-align:center;font-size:30px;margin-bottom:30px}
+    .product{background:#fff;border-radius:20px;padding:18px;box-shadow:0 8px 30px #00000012}
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .gallery img{width:100%;border-radius:14px;display:block}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}
+    .feature{background:#111;color:#fff;padding:22px;border-radius:16px;text-align:center}
+    .feature b{display:block;color:#dfff00;font-size:18px;margin-bottom:5px}
+    .order{background:#111;color:#fff;border-radius:24px;padding:35px}
+    form{display:grid;gap:15px;max-width:650px;margin:auto}
+    label{font-weight:700}
+    input,select,textarea{width:100%;padding:14px;border-radius:10px;border:1px solid #ddd;font-size:16px}
+    textarea{min-height:90px;resize:vertical}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    .note{font-size:14px;color:#bbb;text-align:center;margin-top:12px}
+    .footer{text-align:center;background:#0b0b0b;color:#aaa;padding:24px}
+    .whatsapp{display:inline-block;margin-top:12px;color:#fff}
+    @media(max-width:760px){
+      .hero{padding-top:35px}.hero-grid{grid-template-columns:1fr}
+      .hero-img{max-width:430px}.gallery{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr}.row{grid-template-columns:1fr}
+      .order{padding:23px 17px}
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="brand">🛍️ ONLINE STORE</div>
+    <div class="hero-grid">
+      <div>
+        <span class="tag">NEW ARRIVAL</span>
+        <h1>Half Zipper<br>Sweatshirt</h1>
+        <p>স্টাইলিশ লুক, আরামদায়ক ফ্যাব্রিক এবং দৈনন্দিন ব্যবহারের জন্য সুন্দর একটি Half Zipper Sweatshirt.</p>
+        <div class="price">৳700</div>
+        <a class="btn" href="#order">অর্ডার করুন →</a>
+      </div>
+      <img class="hero-img" src="black-sweatshirt.png" alt="Black Half Zipper Sweatshirt">
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title">Product Gallery</h2>
+    <div class="product">
+      <div class="gallery">
+        <img src="black-sweatshirt.png" alt="Black Half Zipper Sweatshirt">
+        <img src="white-sweatshirt.png" alt="White Half Zipper Sweatshirt">
+      </div>
+      <div class="features">
+        <div class="feature"><b>Super Soft</b>আরামদায়ক ফ্যাব্রিক</div>
+        <div class="feature"><b>Premium Quality</b>ভালো মানের ফিনিশিং</div>
+        <div class="feature"><b>Stylish Look</b>স্মার্ট ও আধুনিক ডিজাইন</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="order">
+  <div class="container">
+    <div class="order">
+      <h2 class="title" style="color:#fff">অর্ডার করতে তথ্য দিন</h2>
+      <form id="orderForm">
+        <div class="row">
+          <div>
+            <label>আপনার নাম</label>
+            <input id="name" required placeholder="আপনার নাম লিখুন">
+          </div>
+          <div>
+            <label>মোবাইল নম্বর</label>
+            <input id="phone" required inputmode="tel" placeholder="01XXXXXXXXX">
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label>রং</label>
+            <select id="color">
+              <option>Black</option>
+              <option>White</option>
+            </select>
+          </div>
+          <div>
+            <label>সাইজ</label>
+            <select id="size">
+              <option>Select size</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label>ডেলিভারি ঠিকানা</label>
+          <textarea id="address" required placeholder="বাসা/রোড, এলাকা, থানা, জেলা"></textarea>
+        </div>
+
+        <button class="btn" type="submit">Order Now — ৳700</button>
+        <div class="note">অর্ডার সাবমিট করলে WhatsApp-এ অর্ডারের তথ্য পাঠানো হবে।</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title">কেন আমাদের থেকে নেবেন?</h2>
+    <div class="features" style="margin-top:0">
+      <div class="feature"><b>🚚 Home Delivery</b>সারা বাংলাদেশে ডেলিভারি</div>
+      <div class="feature"><b>📞 Support</b>প্রয়োজনে যোগাযোগ করুন</div>
+      <div class="feature"><b>👕 2 Colors</b>Black ও White</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>Online Store</div>
+  <a class="whatsapp" href="https://wa.me/8801856272527" target="_blank">WhatsApp: 01856272527</a>
+</footer>
+
+<script>
+document.getElementById("orderForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const color = document.getElementById("color").value;
+  const size = document.getElementById("size").value;
+  const address = document.getElementById("address").value.trim();
+
+  const msg =
+`🛍️ New Order - Online Store
+
+Product: Half Zipper Sweatshirt
+Price: ৳700
+Color: ${color}
+Size: ${size}
+
+Customer Name: ${name}
+Phone: ${phone}
+Address: ${address}`;
+
+  window.open("https://wa.me/8801856272527?text=" + encodeURIComponent(msg), "_blank");
+});
+</script>
+</body>
+</html>
